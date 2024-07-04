@@ -23,13 +23,13 @@ class TGroupDatasets(Enum):
 class TDataset(Enum):
     gaussian = 'gaussian'
     gaussian_exile = 'gaussian_exile'
-    gaussian_exile_poison = 'gaussian_exile_poison'
-    gaussian_poison = 'gaussian_poison'
+    gaussian_exile_poison = 'gaussian_exile_poison'  # Doesn't work for PID gives math domain error
+    gaussian_poison = 'gaussian_poison'  # Doesn't work for PID gives math domain error
     sine_uni = 'sine_uni'  # Represents our original sine dataset before sine was repurposed for LOF experiment
     sine = 'sine'
     sine_exile = 'sine_exile'
-    sine_exile_poison = 'sine_exile_poison'
-    sine_poison = 'sine_poison'
+    sine_exile_poison = 'sine_exile_poison'  # Doesn't work for PID gives math domain error
+    sine_poison = 'sine_poison'  # Doesn't work for PID gives math domain error
     diamond = 'diamond'
     square = 'square'
     tee_before = 'tee_before'
