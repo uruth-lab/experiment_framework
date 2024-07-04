@@ -45,7 +45,7 @@ class TDataset(Enum):
     mammography = 'mammography'
     musk = 'musk'
     satimage2 = 'satimage-2'  # Doesn't work for PID with open space
-    siesmic = 'siesmic'  # Doesn't work with EIF because EIF doesn't support int
+    siesmic = 'siesmic'
     smtp = 'smtp'
     thyroid = 'thyroid'
     vowels = 'vowels'  # Doesn't work for PID with open space
