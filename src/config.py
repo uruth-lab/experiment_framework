@@ -49,7 +49,6 @@ class Conf:
                  },
             ],
         },
-        # TODO 4 Generate old datasets
     ]
 
     # TODO CONFIGURE EXPERIMENTS HERE #########################################
