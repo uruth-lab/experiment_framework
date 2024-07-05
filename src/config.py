@@ -68,7 +68,7 @@ class Conf:
                     # {'algo': TAlgorithm.IsolationForest, 'params': {'contamination': 1e-15}},
                     # {'algo': TAlgorithm.CustomIF, 'params': {'contamination': 1e-15}},
                     {'algo': TAlgorithm.EIF, 'params': {}},
-                    {'algo': TAlgorithm.PIDForest, 'params': {}},
+                    # {'algo': TAlgorithm.PIDForest, 'params': {}},
                     # {'algo': TAlgorithm.OneClassSVM, 'params': {}},
                     {'algo': TAlgorithm.LocalOutlierFactor, 'params': {}},
                     {'algo': TAlgorithm.LocalOutlierFactor, 'params': {"novelty": True}},

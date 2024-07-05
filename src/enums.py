@@ -42,13 +42,13 @@ class TDataset(Enum):
     sphere = 'sphere'
     # From PID Paper (Also found on http://odds.cs.stonybrook.edu/)
     http = 'http'
-    mammography = 'mammography'
-    musk = 'musk'
-    satimage2 = 'satimage-2'  # Doesn't work for PID with open space
-    siesmic = 'siesmic'
+    mammography = 'mammography'  # Doesn't work for PID with open space (gets an out-of-bounds in split_indices)
+    musk = 'musk'  # Doesn't work for PID with open space (gets an out-of-bounds in split_indices)
+    satimage2 = 'satimage-2'  # Doesn't work for PID with open space (gets an out-of-bounds in split_indices)
+    siesmic = 'siesmic'  # Doesn't work for PID with open space (gets an out-of-bounds in split_indices)
     smtp = 'smtp'
-    thyroid = 'thyroid'
-    vowels = 'vowels'  # Doesn't work for PID with open space
+    thyroid = 'thyroid'  # Doesn't work for PID with open space (gets an out-of-bounds in split_indices)
+    vowels = 'vowels'  # Doesn't work for PID with open space (gets an out-of-bounds in split_indices)
 
 
 ###############################################################################
