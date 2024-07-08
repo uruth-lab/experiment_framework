@@ -45,7 +45,7 @@ class PerfConfig:
         MARKER_EXTRA = 'o'
         HEATMAP_ENABLED = True
         HEATMAP_POINTS_PER_AXIS = 350
-        OPEN_SPACE_PERCENTAGE = 200
+        OPEN_SPACE_PERCENTAGE = 50
         COLOR_BAR_TICK_COUNT = 5
         FLOOR_SCORES_FOR_COLORS_ONLY_TO_TICKS = not True
 
@@ -53,7 +53,7 @@ class PerfConfig:
         "Used to make heatmap more clearly separated (Only has an effect when floor is on)"
         INCLUDE_HEATMAP_BOUNDARY_VALUES_AS_TICKS = True
         "Controls if points like the min/max of the heatmap get added as ticks"
-        INCLUDE_HEATMAP_THRESHOLD_AS_TICK = not True
+        INCLUDE_HEATMAP_THRESHOLD_AS_TICK = True
         "Controls if the threshold value gets added as ticks"
 
 
