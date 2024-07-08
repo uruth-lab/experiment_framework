@@ -45,7 +45,7 @@ class PerfConfig:
         MARKER_EXTRA = 'o'
         HEATMAP_ENABLED = True
         HEATMAP_POINTS_PER_AXIS = 350
-        OPEN_SPACE_PERCENTAGE = 50
+        OPEN_SPACE_PERCENTAGE = 200
         COLOR_BAR_TICK_COUNT = 5
         FLOOR_SCORES_FOR_COLORS_ONLY_TO_TICKS = not True
 
