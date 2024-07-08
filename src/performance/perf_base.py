@@ -53,6 +53,8 @@ class PerfConfig:
         "Used to make heatmap more clearly separated (Only has an effect when floor is on)"
         INCLUDE_HEATMAP_BOUNDARY_VALUES_AS_TICKS = True
         "Controls if points like the min/max of the heatmap get added as ticks"
+        INCLUDE_HEATMAP_THRESHOLD_AS_TICK = not True
+        "Controls if the threshold value gets added as ticks"
 
 
 def apx_equ(a, b):

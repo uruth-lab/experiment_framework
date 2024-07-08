@@ -194,10 +194,12 @@ class VizScatter(VizScatterRaw):
                 scores_upper = round(np.max(scores), 3)
                 is_scores_above_heatmap = scores_upper > heatmap_max
                 ticks = np.linspace(scores_lower, scores_upper, PerfConfig.ScatterPlot.COLOR_BAR_TICK_COUNT)
-                ticks = [round(x, 3) for x in ticks] + [round(threshold, 3)]
+                ticks = [round(x, 3) for x in ticks]
+                if PerfConfig.ScatterPlot.INCLUDE_HEATMAP_THRESHOLD_AS_TICK:
+                    ticks += [round(threshold, 3)]
                 if PerfConfig.ScatterPlot.INCLUDE_HEATMAP_BOUNDARY_VALUES_AS_TICKS:
                     heatmap_endpoints = [heatmap_lower, heatmap_upper]
-                    ticks = ticks + heatmap_endpoints
+                    ticks += heatmap_endpoints
 
                 if PerfConfig.ScatterPlot.FLOOR_SCORES_FOR_COLORS_ONLY_TO_TICKS:
                     ticks.sort()  # Code below assumes sorted list (the threshold added may not be in the right place)
